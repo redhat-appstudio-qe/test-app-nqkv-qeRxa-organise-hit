@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-nshy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-icyc-tenant/test-app-nqkv/devfile-sample-python-basic-nshy@sha256:7214f24ca7e2f0f8eda6fd4f39a4ec3c2f88d9c71e02d308a011160e38b35372
+        name: my-python
+        resources: {}
+status: {}
